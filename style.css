@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    font-family: "Nunito", sans-serif;
+
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px;
+    height:70px;
+    width: 100%;
+}
+#header a{
+    padding: 20px;
+}
+#navbar{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+#navbar li{
+    padding: 0 20px;
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.5s ;
+}
+#navbar li a:hover{
+    color: aqua;
+}
+#main{
+    background-image: url('/images/main.jpg');
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding:0  80px;
+    gap: 3%;
+    width: auto;
+
+}
+#main h4{
+    font-size: 50px;
+}
+#main h2{
+    font-size: 80px;
+    color: blue;
+}
+#main h3{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#main p{
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#main button{
+    height: 40px;
+    width: 120px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    background-color: black;
+}
+#products h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 21%; /* Flex-grow, flex-shrink, flex-basis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #header ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .product {
+        flex: 1 1 45%; /* Two products per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        flex: 1 1 100%; /* One product per row */
+    }
+}
